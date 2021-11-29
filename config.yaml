@@ -1,0 +1,54 @@
+baseURL: "https://markau.dev/"
+languageCode: "en-us"
+title: "markau.dev"
+theme: "risotto"
+author: "Martin Kauppinen"
+copyright: "© 2021 Martin Kauppinen"
+
+params:
+  theme:
+    palette: "gruvbox-dark"
+    mode: "dark-mode"
+  socialLinks:
+    - icon: "fab fa-github"
+      title: "GitHub"
+      url: "https://github.com/martinkauppinen/"
+
+    - icon: "fab fa-envelope"
+      title: "Email"
+      url: "mailto:martin.kauppinen+markau.dev@gmail.com"
+
+    - icon: "fab fa-linkedin"
+      title: "LinkedIn"
+      url: "https://www.linkedin.com/in/martin-kauppinen-a32256138"
+  about:
+    title: "markau.dev"
+    description: "Musings when the muse sings"
+
+menu:
+  main:
+    - identifier: "posts"
+      name: "Posts"
+      url: "/posts/"
+    - identifier: "about"
+      name: "About"
+      url: "/about/"
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  series: "series"
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: true
