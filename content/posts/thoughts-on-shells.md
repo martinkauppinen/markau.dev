@@ -47,7 +47,7 @@ thing on the line (save for the starting `$ `).
 
 Of course, `zsh` having a bunch of fancy plugins and eye-candy wasn't the only
 good[^2] thing about it. Oh my zsh is often the thing listed online in articles
-and blog posts as _the reason_ to switch to zsh, but I don't think that's even
+and blog posts as _the reason_ to switch to `zsh`, but I don't think that's even
 the most compelling reason. `zsh` just has some saner defaults and
 configurations that `bash` either lacks, or does a poor job recreating.
 
@@ -79,15 +79,16 @@ not even planning on talking about `fish` next. Interesting how you can just
 continue writing sometimes once you've started.
 
 ## POSIX-noncompliance? Ew.
-Both `bash` and `zsh` are POSIX-compatible, and their syntaxes similar enought
+Both `bash` and `zsh` are POSIX-compatible, and their syntaxes similar enough
 that switching between the two is in most cases painless. The first
 non-POSIX-ish shell I ran into was `tcsh` and my god did (do) I dislike it
 strongly. I realize this is mostly inertia and not being used to it, but it
-lacking simple things like redirection stdout and stderr to different places,
-redirection in general being a bit weird. I sometimes run into `tcsh`-scripts
-and the syntax is... not horrifying, but bad enough that my eyes glaze over. It
-feels like taking C and trying to cram it into some form of shell language[^3]
-to make it suck less. But all shell languages suck, and so `(t)csh` does too.
+lacking simple things like redirecting stdout and stderr to different places,
+and redirection in general being a bit weird. I sometimes run into
+`tcsh`-scripts and the syntax is... not horrifying, but bad enough that my eyes
+glaze over. It feels like taking C and trying to cram it into some form of shell
+language[^3] to make it suck less. But all shell languages suck, and so `(t)csh`
+does too.
 
 There were lots of other little things that just bothered me so much about using
 `tcsh` interactively that I began believing (wrongly) that POSIX-noncompliant
@@ -97,7 +98,7 @@ shells are awful by default.
 
 ## POSIX-noncompliance is good, actually.
 Enter `fish`. It is not POSIX-compliant, but it is a good shell. A great shell,
-even. It corrected my belief that POSIX-noncompliance is bad by deafult, and it
+even. It corrected my belief that POSIX-noncompliance is bad by default, and it
 is a joy to use interactively. It has a ton of the features and eye-candy that
 `zsh` has by default, and more! Its completion hinting[^4] where a context-aware
 completion is shown dimly after your cursor is very cool. Hitting the right
@@ -148,7 +149,7 @@ strong force.
 ## Switching back to `zsh`?
 Typing all of this out, I think I will be going back to `zsh` pretty soon.
 `fish` has been great to use, but I have had some issues with it. The completion
-hinting sometimes simly does not work or doesn't do what I expect/want it do to
+hinting sometimes simply does not work or doesn't do what I expect/want it do to
 and is frankly distracting sometimes. Tab-completion sometimes hits some weird
 recursion depth that I haven't managed to get to the bottom of. I have to look
 up syntax whenever I have to do something that is slightly more complicated
