@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "markau.dev"
 theme: "risotto"
 author: "Martin Kauppinen"
-copyright: "© 2021 Martin Kauppinen"
+copyright: "© 2022 Martin Kauppinen"
 enableGitInfo: true
 
 params:
