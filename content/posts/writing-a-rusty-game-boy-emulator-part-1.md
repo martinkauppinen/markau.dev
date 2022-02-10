@@ -2,6 +2,7 @@
 title: "Writing a Rusty Game Boy Emulator (Part 1)"
 date: 2022-02-07T20:25:38+01:00
 author: Martin Kauppinen
+series: ["Rusty Game Boy Emulator"]
 ---
 
 Sometimes I get the urge to write an emulator. This has happened several times
