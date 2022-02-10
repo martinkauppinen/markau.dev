@@ -1,0 +1,26 @@
+.info-box {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.info-box a {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.post-series {
+}
+
+.page__body a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.highlight-filename {
+    display: flex;
+    justify-content: right;
+    padding: 0.5em;
+    color: #ffffff80;
+    background-color: #00000050 !important;
+}

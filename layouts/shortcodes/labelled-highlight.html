@@ -1,0 +1,8 @@
+{{ $filename := .Get "filename" }}
+{{ $lang := .Get "lang" }}
+{{ $options := .Get "options" }}
+{{ $input := (trim .Inner "\n\r") }}
+
+<code class="highlight-filename">[{{ $filename }}]</code>
+
+{{ highlight $input $lang $options }}

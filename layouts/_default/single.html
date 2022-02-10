@@ -2,10 +2,36 @@
     <header class="content__header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
+    {{ if .Params.series }}
+        {{ with index (.GetTerms "series") 0 }}
+        <div class="info-box">
+            <p>series: <a href="{{ .Permalink }}">{{ .LinkTitle }}</a></p>
+        </div>
+        {{ end }}
+    {{ end }}
     <div class="content__body">
         {{ .Content }}
     </div>
     <footer class="content__footer"></footer>
+    {{ if .Params.series }}
+        <div class="post-series">
+            {{ $series := where .Site.RegularPages.ByDate ".Params.series" "intersect" .Params.series }}
+            {{ with $series }}
+            <h3 id="series">Posts in this series</h3>
+            <ol>
+                {{ range . }}
+                <li>
+                    {{ if eq .File.UniqueID $.File.UniqueID }}
+                    <b>{{ .Title }}</b>
+                    {{ else }}
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ end }}
+                </li>
+                {{ end }}
+            </ol>
+            {{ end }}
+        </div>
+    {{ end }}
 {{ end }}
 
 {{define "aside" }}
