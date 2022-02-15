@@ -24,6 +24,11 @@ params:
     - icon: "fab fa-linkedin"
       title: "LinkedIn"
       url: "https://www.linkedin.com/in/martin-kauppinen-a32256138"
+
+    - icon: "fab fa-rss"
+      title: "RSS Feed"
+      url: "https://markau.dev/posts/index.xml"
+
   about:
     title: "markau.dev"
     description: "Musings when the muse sings"
