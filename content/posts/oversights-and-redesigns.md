@@ -3,7 +3,6 @@ title: "Oversights and Redesigns"
 date: 2022-02-15T22:16:26+01:00
 author: Martin Kauppinen
 series: ["Rusty Game Boy Emulator"]
-draft: true
 ---
 
 For the third installment of this series, I'm going to have to redesign the
