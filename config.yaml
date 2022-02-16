@@ -13,20 +13,16 @@ params:
   custom_css:
     - "css/custom.css"
   socialLinks:
-    - icon: "fab fa-github"
-      title: "GitHub"
+    - title: "GitHub"
       url: "https://github.com/martinkauppinen/"
 
-    - icon: "fab fa-envelope"
-      title: "Email"
+    - title: "Email"
       url: "mailto:martin.kauppinen+markau.dev@gmail.com"
 
-    - icon: "fab fa-linkedin"
-      title: "LinkedIn"
+    - title: "LinkedIn"
       url: "https://www.linkedin.com/in/martin-kauppinen-a32256138"
 
-    - icon: "fab fa-rss"
-      title: "RSS Feed"
+    - title: "RSS Feed"
       url: "https://markau.dev/posts/index.xml"
 
   about:

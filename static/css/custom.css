@@ -24,3 +24,7 @@
     color: #ffffff80;
     background-color: #00000050 !important;
 }
+
+.aside__social-links li {
+    display: block !important;
+}
