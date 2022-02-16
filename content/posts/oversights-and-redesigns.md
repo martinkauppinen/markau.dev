@@ -89,11 +89,13 @@ pub fn step(&mut self) {
 The function simply extracts the instruction mnemonic, function, size, and
 number of cycles from the big table of instructions. It runs the instruction's
 function, passing in itself, updates the program counter to point at the next
-instruction, and registers how many cycles it took. Looking at the code now, I
-see that it should execute `func` before updating the program counter, as
+instruction, and registers how many cycles it took. ~~~Looking at the code now,
+I see that it should execute `func` after updating the program counter, as
 otherwise the jump instructions will be off by as many bytes as they took up in
-memory. So that's another oversight to add to the to-do list. But what I want to
-focus on is the easy fix for the conditional cycles conundrum [^ccc].
+memory. So that's another oversight to add to the to-do list~~~ (See [update at
+the bottom]({{< relref "oversights-and-redesigns.md#update-2022-02-16" >}})).
+But what I want to focus on is the easy fix for the conditional cycles conundrum
+[^ccc].
 
 Since the functions take in a `&mut self`, they _could_ modify the
 `machine_cycles` field before returning, and the `step` function could simply
@@ -131,3 +133,41 @@ it took, that information would be spread out over several files. Taking the
 easy way ensures that all the information is available in a single place.
 
 I may revisit this decision in the future, but for now I will leave it at that.
+
+## 2022-02-16 Update: Not quite that simple {#update-2022-02-16}
+I wrote the above article late at night, and didn't actually test my simple
+solution before going to bed. The actual solution ended up being a slightly less
+simple, but I still didn't have to go back and change all the code from before.
+I know I'll have to in the future, though...
+
+Anyways, I did make the branching instructions poke at the `machine_cycles`
+field if the branch was taken, but that was not quite enough. Originally I
+thought I had to move the increment of the program counter to before executing
+the `func` call, but since these and many other instructions take an argument,
+and my current implementation for retrieving said argument depends on the state
+of the program counter, moving the increment caused loads of tests to fail
+because the instructions were given the wrong arguments.
+
+So instead, I made the increment of the program counter conditional on a boolean
+that is to be set by any instructions that update the program counter. That way,
+it will not update and be off by a few bytes when executing such an instruction.
+The arguments to the instruction I saved before executing it in another new
+field in the `Cpu` struct: `current_argument`:
+
+```diff
+pub struct Cpu {
+    // ...
++   current_argument: Option<Argument>,
+}
+```
+`Argument` is just an enum that looks like this:
+```rust
+enum Argument {
+    Byte(u8),
+    Word(u16),
+}
+```
+Thinking about it now, the `OpCode` struct's function pointer can be changed to
+accept an `Option<Argument>` as an argument. That way they don't have to ask the
+`Cpu` for it by reading memory themselves. Dang it, I'm going to have to
+refactor everything and implement it with traits anyway, huh?
