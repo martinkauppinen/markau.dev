@@ -3,7 +3,6 @@ title: "We Interrupt This Program for... Interrupts!"
 date: 2022-02-22T18:42:25+01:00
 author: Martin Kauppinen
 series: ["Rusty Game Boy Emulator"]
-draft: true
 ---
 
 Taking a break from all the opcodes, I wanted to turn my attention to interrupt
