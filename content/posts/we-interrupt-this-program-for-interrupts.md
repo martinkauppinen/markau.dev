@@ -96,7 +96,7 @@ the previous section.
 Modelling interrupts in Rust, I decided to base everything on an `enum` to have
 semantic names for the interrupts:
 
-```rust
+```rust {#interrupt-enum}
 enum Interrupt {
     Vblank,
     Lcdc,
