@@ -51,7 +51,7 @@ Blockquotes:
 
 Images:
 
-{{< figure src="http://placehold.it/640x400&text=Placeholder" caption="Image caption"
+{{< figure src="https://placehold.it/640x400&text=Placeholder" caption="Image caption"
 alt="Placeholder image" >}}
 
 Some `<b>inline code</b>`. And
