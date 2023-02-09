@@ -175,7 +175,7 @@ These instructions take the value of the HL pair, interpret it as a memory
 address and either loads or stores the value at that location in memory.
 
 ### `LD (HL+), reg`
-This is a weird-looking instruction [^versions]. There's a mysterious plus sign that if one
+This is a weird-looking instruction[^versions]. There's a mysterious plus sign that if one
 doesn't know what the instruction does, could be interpreted in a number of
 ways. I had some trouble finding out what this actually did for a little bit for
 some reason, but I believe I know what it does now.

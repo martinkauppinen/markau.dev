@@ -1,29 +1,28 @@
 baseURL: "https://markau.dev/"
 languageCode: "en-us"
 title: "markau.dev"
-theme: "risotto"
+theme: "markau-theme"
 author: "Martin Kauppinen"
-copyright: "© 2022 Martin Kauppinen"
+copyright: "© 2023 Martin Kauppinen"
 enableGitInfo: true
 
 params:
-  theme:
-    palette: "gruvbox-dark"
-    mode: "dark-mode"
-  custom_css:
-    - "css/custom.css"
   socialLinks:
     - title: "GitHub"
       url: "https://github.com/martinkauppinen/"
+      icon: "fa-brands fa-github"
 
     - title: "Email"
       url: "mailto:martin.kauppinen+markau.dev@gmail.com"
+      icon: "fa-solid fa-envelope"
 
     - title: "LinkedIn"
       url: "https://www.linkedin.com/in/martin-kauppinen-a32256138"
+      icon: "fa-brands fa-linkedin"
 
     - title: "RSS Feed"
       url: "https://markau.dev/posts/index.xml"
+      icon: "fa-solid fa-square-rss"
 
   about:
     title: "markau.dev"
@@ -45,6 +44,10 @@ taxonomies:
   category: "categories"
   tag: "tags"
   series: "series"
+
+markup:
+  highlight:
+    style: "gruvbox"
 
 privacy:
   disqus:

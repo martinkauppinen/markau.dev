@@ -43,7 +43,7 @@ also shown [oh my zsh](https://ohmyz.sh/) and it was just so cool and shiny that
 I had to have it. I still base my shell prompts, no matter what shell I use, on
 the [ys theme](https://blog.ysmood.org/my-ys-terminal-theme/). I really like
 having a multi-line prompt so that any commands I type are always the first
-thing on the line (save for the starting `$ `).
+thing on the line (save for the starting `$`).
 
 Of course, `zsh` having a bunch of fancy plugins and eye-candy wasn't the only
 good[^2] thing about it. Oh my zsh is often the thing listed online in articles
