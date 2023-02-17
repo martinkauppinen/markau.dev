@@ -9,7 +9,7 @@ essentially just a picture series of my unboxing of the keyboard. :)
 
 {{< figure src="01-urgent.jpg" caption="Very urgent package" >}}
 
-The package was labelled as "Extremely Urgent" on the outside. Given the 9-day
+The package was labelled as "Extremely Urgent" on the outside. Given the 3-day
 shipping time from Taiwan to Sweden, it seems like this label actually did
 something. Also, since I brought a new thing into the house, the cat was
 naturally very curious.
