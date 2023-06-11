@@ -2,7 +2,6 @@
 title: "Take Care of Yourself"
 date: 2023-06-11T19:29:10+02:00
 author: Martin Kauppinen
-draft: true
 ---
 
 I recently had a 4-day weekend where I essentially did nothing but code. And
