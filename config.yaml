@@ -8,6 +8,11 @@ enableGitInfo: true
 
 params:
   socialLinks:
+    - title: "Mastodon"
+      url: "https://tech.lgbt/fyvec/"
+      icon: "fa-brands fa-mastodon"
+      rel: "me"
+
     - title: "GitHub"
       url: "https://github.com/martinkauppinen/"
       icon: "fa-brands fa-github"
