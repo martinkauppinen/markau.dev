@@ -9,7 +9,7 @@ enableGitInfo: true
 params:
   socialLinks:
     - title: "Mastodon"
-      url: "https://tech.lgbt/fyvec/"
+      url: "https://tech.lgbt/@fyvec/"
       icon: "fa-brands fa-mastodon"
       rel: "me"
 
