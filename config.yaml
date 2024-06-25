@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "markau.dev"
 theme: "markau-theme"
 author: "Martin Kauppinen"
-copyright: "© 2023 Martin Kauppinen"
+copyright: "© 2024 Martin Kauppinen"
 enableGitInfo: true
 
 params:
