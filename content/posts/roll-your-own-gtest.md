@@ -568,7 +568,7 @@ private:
 }
 {{< /labelled-highlight >}}
 
-Now if we compile and `footest.cpp` from before:
+Now if we compile and run `footest.cpp` from before:
 
 ```bash
 $ make footest && ./footest
