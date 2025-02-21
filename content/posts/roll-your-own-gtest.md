@@ -341,7 +341,7 @@ And running the test is a simple for-each loop:
 
 {{< labelled-highlight lang="cpp" filename="src/smalltest.hpp"
 options="hl_lines=5-24">}}
-hlass TestRegistry
+class TestRegistry
 {
 public:
     // ---<snip>---
