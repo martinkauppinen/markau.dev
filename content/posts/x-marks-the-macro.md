@@ -2,7 +2,6 @@
 title: "X Marks the Macro"
 date: 2025-08-27T15:31:42+02:00
 author: Martin Kauppinen
-draft: true
 ---
 
 In this post I'd like to document a semi-obscure pattern that (ab)uses the C/C++
