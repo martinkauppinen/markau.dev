@@ -1,9 +1,9 @@
 baseURL: "https://markau.dev/"
-languageCode: "en-us"
+locale: "en-us"
 title: "markau.dev"
 theme: "markau-theme"
 author: "Martin Kauppinen"
-copyright: "© 2025 Martin Kauppinen"
+copyright: "© 2026 Martin Kauppinen"
 enableGitInfo: true
 
 params:
