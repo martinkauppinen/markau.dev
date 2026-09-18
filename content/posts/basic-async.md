@@ -512,7 +512,7 @@ As you can see, we're doing basically the same thing. But instead of having a
 `readfds` and an `exceptfds`, we just tell `poll()` that we want to monitor for
 `POLLIN` (read) events, and we get `POLLERR` & co. (error) events for free. Then
 we can just read `.revents` to see what happened and handle it accordingly. As
-you can see on lines 27 and 42, it's just some bit masking against the events
+you can see on lines 24 and 40, it's just some bit masking against the events
 we're interested in.
 
 Alright, so now we have a more powerful server, without the problem of limited
