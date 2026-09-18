@@ -1,6 +1,6 @@
 ---
 title: "Basics of Asynchronous I/O"
-date: 2026-09-16T16:24:25+02:00
+date: 2026-09-19T00:22:00+02:00
 author: Martin Kauppinen
 ---
 
